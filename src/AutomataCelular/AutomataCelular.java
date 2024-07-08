@@ -10,8 +10,7 @@ public class AutomataCelular {
 
     public AutomataCelular(Tablero tablero) {
         this.tablero = tablero;
-        this.executor = Executors.
-                newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        this.executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     }
 
     public void iniciar(int iteraciones) {
@@ -22,7 +21,7 @@ public class AutomataCelular {
     }
 
     private void ejecutarIteracion() {
-        Celda[][] celdas = new Celda[tablero.getFilas()][tablero.getColumnas()];
+        Celda[][] celdas = tablero.getCeldas();
         for (int i = 0; i < tablero.getFilas(); i++) {
             for (int j = 0; j < tablero.getColumnas(); j++) {
                 final int fila = i;
@@ -31,32 +30,20 @@ public class AutomataCelular {
                     if (tablero.getCeldas()[fila][columna].getSerVivo() != null) {
                         tablero.getCeldas()[fila][columna].getSerVivo().pasoDelTiempo();
                         if (tablero.getCeldas()[fila][columna].getSerVivo() instanceof Animal) {
-                            ((Animal) tablero.getCeldas()[fila][columna].getSerVivo())
-                                    .mover(tablero.getCeldas(), fila, columna);
+                            ((Animal) tablero.getCeldas()[fila][columna].getSerVivo()).mover(celdas, fila, columna);
                         }
                     }
                 });
             }
-
         }
-        executor.shutdown();
         try {
             executor.awaitTermination(1, TimeUnit.SECONDS);
-        } catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-        for (int i = 0; i < tablero.getFilas(); i++) {
-            for (int j = 0; j < tablero.getColumnas(); j++) {
-                tablero.getCeldas()[i][j] = celdas[i][j];
-                
-            }
         }
         if (!executor.isTerminated()) {
             executor.shutdownNow();
         }
         executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     }
-
-
-
 }

@@ -3,7 +3,7 @@ package AutomataCelular;
 public class Raton extends Animal {
 
     public Raton() {
-        super(5, 10);
+        super();
     }
 
     @Override

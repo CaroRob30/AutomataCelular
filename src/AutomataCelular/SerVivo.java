@@ -1,5 +1,6 @@
 package AutomataCelular;
 
+
 public abstract class SerVivo {
     protected int energia;
 

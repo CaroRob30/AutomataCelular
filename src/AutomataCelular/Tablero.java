@@ -8,9 +8,9 @@ public class Tablero {
     private Celda[][] celdas;
     private Random random;
 
-    public Tablero(int filas, int columnas) {
-        this.filas = filas;
-        this.columnas = columnas;
+    public Tablero() {
+        this.filas = Configuracion.FILAS;
+        this.columnas = Configuracion.COLUMNAS;
         this.celdas = new Celda[filas][columnas];
         this.random = new Random();
         iniciarTablero();
@@ -23,13 +23,8 @@ public class Tablero {
 
                 int aleatorio = random.nextInt(3); // 0, 1, o 2
                 if (aleatorio == 0) {
-                    // Celda vacía
+                    celdas[x][y].setSerVivo(new Planta());
                 } else if (aleatorio == 1) {
-                    celdas[x][y].setSerVivo(new Planta(
-                            Configuracion.ENERGIA_INICIAL_PLANTA,
-                            Configuracion.ENERGIA_MAXIMA_PLANTA
-                    ));
-                } else if (aleatorio == 2) {
                     celdas[x][y].setSerVivo(new Gato()); // Ejemplo de animal
                 }
 
@@ -64,6 +59,9 @@ public class Tablero {
         for (int x = 0; x < filas; x++) {
             for (int y = 0; y < columnas; y++) {
                 Celda celda = celdas[x][y];
+                if (celda!=null){
+
+                }
              /*   celda.actualizar(); este metodo deberá estar implementado en la
                 clase celda
                         */
