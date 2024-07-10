@@ -20,16 +20,17 @@ public class Tablero {
         for (int x = 0; x < filas; x++) {
             for (int y = 0; y < columnas; y++) {
                 celdas[x][y] = new Celda();
-
-                int aleatorio = random.nextInt(3); // 0, 1, o 2
+                int aleatorio = random.nextInt(5);
                 if (aleatorio == 0) {
-                    celdas[x][y].setSerVivo(new Planta());
+                    celdas[x][y].agregarSerVivo(new Planta());
                 } else if (aleatorio == 1) {
-                    celdas[x][y].setSerVivo(new Gato()); // Ejemplo de animal
+                    celdas[x][y].agregarSerVivo(new Gato());
+                } else if (aleatorio == 2) {
+                    celdas[x][y].agregarSerVivo(new Perro());
+                } else if (aleatorio == 3) {
+                    celdas[x][y].agregarSerVivo(new Raton());
                 }
-
             }
-
         }
     }
 
@@ -50,30 +51,5 @@ public class Tablero {
             return celdas[x][y];
         }
         return null;
-    }
-
-    public void actualizarTablero() {
-        /*falta implementar el estado del tablero con las interacciones
-        mover animales, crecer plantas, etc.
-         */
-        for (int x = 0; x < filas; x++) {
-            for (int y = 0; y < columnas; y++) {
-                Celda celda = celdas[x][y];
-                if (celda!=null){
-
-                }
-             /*   celda.actualizar(); este metodo deberá estar implementado en la
-                clase celda
-                        */
-            }
-
-        }
-    }
-
-    public void agregarSerVivo(SerVivo serVivo, int x, int y) {
-        Celda celda = getCelda(x, y);
-        if (celda != null) {
-            celda.setSerVivo(serVivo);
-        }
     }
 }

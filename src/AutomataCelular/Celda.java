@@ -1,24 +1,29 @@
 package AutomataCelular;
 
-public class Celda {
+import java.util.ArrayList;
+import java.util.List;
 
-    private SerVivo serVivo;
+public class Celda {
+    private List<SerVivo> seresVivos;
 
     public Celda() {
-
-        this.serVivo = null;
+        this.seresVivos = new ArrayList<>();
     }
 
-    public SerVivo getSerVivo() {
-        return serVivo;
+    public List<SerVivo> getSeresVivos() {
+        return seresVivos;
     }
 
-    public void setSerVivo(SerVivo serVivo) {
-        this.serVivo = serVivo;
+    public void agregarSerVivo(SerVivo serVivo) {
+        seresVivos.add(serVivo);
+    }
+
+    public void eliminarSerVivo(SerVivo serVivo) {
+        seresVivos.remove(serVivo);
     }
 
     public boolean estaVacia() {
-        return serVivo == null;
+        return seresVivos.isEmpty();
     }
 
 }

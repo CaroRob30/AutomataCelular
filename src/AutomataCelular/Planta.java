@@ -1,24 +1,37 @@
 package AutomataCelular;
 
 public class Planta extends SerVivo {
+    private final int energiaMaxima;
 
     public Planta() {
         this.energia = Configuracion.ENERGIA_INICIAL;
+        this.energiaMaxima = Configuracion.ENERGIA_MAXIMA;
+
 
     }
 
     @Override
-    public void pasoDelTiempo() {
-        if (energia < Configuracion.ENERGIA_MAXIMA) {
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            energia++;
-        } else if (energia == Configuracion.ENERGIA_MAXIMA) {
-        //lo se que deberia hacer es que si se llega a energia máxima, entonces la Planta muere y la celda queda null
+    public boolean estaMuerto() {
+        if (energia <= 0) {
+            return true;
         }
+        return false;
+    }
 
+    @Override
+    public void pasoDelTiempo() {
+        if (energia < energiaMaxima) {
+            energia++;
+            if (energia >= energiaMaxima) {
+                energia = energiaMaxima;
+
+            }
+        } else if (energia <= 0) {
+            morir();
+        }
+    }
+
+    public void morir() {
+        energia = 0;
     }
 }

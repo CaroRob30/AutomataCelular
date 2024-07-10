@@ -18,19 +18,16 @@ public abstract class Animal extends SerVivo {
 
     @Override
     public void pasoDelTiempo() {
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         edad++;
         energia--;
     }
 
-    public boolean estaVivo() {
-        if (energia <= 0 || edad >= edadMaxima){
-            return false;
+
+    @Override
+    public boolean estaMuerto() {
+        if (edad <= 0 || edad >= edadMaxima) {
+            return true;
         }
-        return true;
+        return false;
     }
 }

@@ -12,5 +12,8 @@ public abstract class SerVivo {
         this.energia = energia;
     }
 
+    public abstract boolean estaMuerto();
+
+
     public abstract void pasoDelTiempo();
 }
