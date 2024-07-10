@@ -27,6 +27,7 @@ public abstract class Animal extends SerVivo {
     public void pasoDelTiempo() {
         setEnergia(energia - 1);
         setEdad(edad+1);
+
     }
 
 
