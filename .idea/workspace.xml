@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Avance 3">
-      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Descripcion.java" afterDir="false" />
+    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Avance 4">
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Cria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/AutomataCelular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/AutomataCelular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Celda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Celda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Configuracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Configuracion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Gato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Gato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Planta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Planta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/SerVivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/SerVivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/VisualizacionDelTablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +41,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Biblioteca Java/LOMBOK/lombok.jar",
-    "onboarding.tips.debug.path": "D:/Users/Caro/Projects IntelliJ/AutomataCelular/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Biblioteca Java/LOMBOK/lombok.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Users/Caro/Projects IntelliJ/AutomataCelular/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -96,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720466420478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Avance 4">
+      <option name="closed" value="true" />
+      <created>1720593385479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720593385479</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,7 +118,8 @@
     <MESSAGE value="Inicio" />
     <MESSAGE value="Avance 2" />
     <MESSAGE value="Avance 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avance 3" />
+    <MESSAGE value="Avance 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avance 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

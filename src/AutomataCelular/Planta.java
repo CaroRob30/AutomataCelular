@@ -7,7 +7,6 @@ public class Planta extends SerVivo {
         this.energia = Configuracion.ENERGIA_INICIAL;
         this.energiaMaxima = Configuracion.ENERGIA_MAXIMA;
 
-
     }
 
     @Override
@@ -21,7 +20,7 @@ public class Planta extends SerVivo {
     @Override
     public void pasoDelTiempo() {
         if (energia < energiaMaxima) {
-            energia++;
+            setEnergia(energia++);
             if (energia >= energiaMaxima) {
                 energia = energiaMaxima;
 

@@ -19,7 +19,7 @@ public class AutomataCelular {
 
     public void iniciar(int iteraciones) {
         for (int i = 1; i < iteraciones; i++) {
-            System.out.println("Año: " + i);
+            System.out.println("Año: ");
             ejecutarIteracion();
             mostrarTablero.mostrarTablero();
             try {
@@ -39,10 +39,12 @@ public class AutomataCelular {
                 executor.submit(() -> {
                     Celda celda = tablero.getCelda(fila, columna);
                     for (SerVivo serVivo : celda.getSeresVivos()) {
-                        serVivo.pasoDelTiempo();
-                        if (serVivo.estaMuerto()) {
-                            celda.eliminarSerVivo(serVivo);
-                        } else if (serVivo instanceof Animal) {
+
+                        if (serVivo instanceof Animal) {
+                            ((Animal)serVivo).pasoDelTiempo();
+                            if (((Animal) serVivo).estaMuerto()) {
+                                celda.eliminarSerVivo(serVivo);
+                            }
                             ((Animal) serVivo).mover(tablero.getCeldas(), fila, columna);
                         }
                     }

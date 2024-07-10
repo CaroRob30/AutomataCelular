@@ -2,12 +2,9 @@ package AutomataCelular;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Gato extends Animal {
-    private static final int ENERGIA_REPRODUCTIVA = 3;
-    private static final int ENERGIA_INICIAL_CRIA = 2;
-    private static final int ENERGIA_COMIDA = 1;
+
 
     public Gato() {
         super();

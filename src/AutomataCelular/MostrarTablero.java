@@ -16,6 +16,7 @@ public class MostrarTablero {
                     boolean hayPlanta = false;
                     for (SerVivo serVivo : celda.getSeresVivos()) {
                         if (serVivo instanceof Gato) {
+                            System.out.print(((Animal)serVivo).getEdad());
                             hayGato = true;
                         } else if (serVivo instanceof Perro) {
                             hayPerro = true;
