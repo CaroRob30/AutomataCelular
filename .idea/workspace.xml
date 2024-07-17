@@ -4,15 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Avance 4">
-      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Cria.java" afterDir="false" />
+    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Avance">
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/ConvivenciaAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/IConvivencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/IPatronDeComportamiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/PatronDeAlimentacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/PatronDeReproduccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/Estadisticas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/RegistroDeEventos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Movimiento/GestorDeMovimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Movimiento/MovimientoAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Crias/Cria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Crias/GatoCria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Crias/PerroCria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Crias/RatonCria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Gato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Perro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Planta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/Raton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/ActualizadorDeEstado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/AutomataCelular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/GeneradorDeSimulacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/GestorDeConvivencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/UbicacionSeresVivos/Celda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/UbicacionSeresVivos/DetectorDeVecinos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/UbicacionSeresVivos/RegistrarUbicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/MostrarTablero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/AutomataCelular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/AutomataCelular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/AutomataCelular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Celda.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Configuracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Configuracion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Gato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Gato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Planta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Planta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Cria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Descripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/Descripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/MostrarTablero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Perro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Planta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Raton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/SerVivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/SeresVivos/SerVivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +56,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CaroRob30&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CaroRob30/AutomataCelular.git&quot;,
+    &quot;accountId&quot;: &quot;ff6fbd8d-1f6f-47bb-940d-920a8431f312&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -41,24 +90,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Biblioteca Java/LOMBOK/lombok.jar&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Users/Caro/Projects IntelliJ/AutomataCelular/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Biblioteca Java/LOMBOK/lombok.jar",
+    "onboarding.tips.debug.path": "D:/Users/Caro/Projects IntelliJ/AutomataCelular/src/Main.java",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,8 +151,27 @@
       <option name="project" value="LOCAL" />
       <updated>1720593385479</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Avance 4">
+      <option name="closed" value="true" />
+      <created>1720652495506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720652495506</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Avance 5">
+      <option name="closed" value="true" />
+      <created>1720652616681</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720652616681</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -119,7 +189,8 @@
     <MESSAGE value="Avance 2" />
     <MESSAGE value="Avance 3" />
     <MESSAGE value="Avance 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avance 4" />
+    <MESSAGE value="Avance 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avance 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -133,7 +204,15 @@
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="AutomataCelular.AutomataCelular" memberName="mostrarTablero" />
+        <PinnedItemInfo parentTag="AutomataCelular.Comportamiento.ConvivenciaAnimal" memberName="tablero" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((AutomataCelular.AutomataCelular)this).tablero.filas" custom="AutomataCelular.AutomataCelular" />
+        <watch expression="((AutomataCelular.AutomataCelular)this).tablero.filas" custom="AutomataCelular.AutomataCelular" />
+        <watch expression="((AutomataCelular.AutomataCelular)this).tablero.filas" custom="AutomataCelular.AutomataCelular" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

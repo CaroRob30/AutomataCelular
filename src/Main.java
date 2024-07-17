@@ -1,14 +1,14 @@
-import AutomataCelular.AutomataCelular;
+import AutomataCelular.Estadisticas.RegistroDeEventos;
+import AutomataCelular.Simulacion.AutomataCelular;
 import AutomataCelular.Configuracion;
 import AutomataCelular.Tablero;
-import AutomataCelular.Planta;
-import AutomataCelular.Gato;
 
 
 public class Main {
     public static void main(String[] args) {
-        Tablero tablero = new Tablero();
-        AutomataCelular automata = new AutomataCelular(tablero);
-        automata.iniciar(Configuracion.ITERACIONES);
+        Tablero tablero = Tablero.getInstancia();
+        AutomataCelular automata = new AutomataCelular();
+        automata.iniciar(Configuracion.CICLOS);
+        RegistroDeEventos.generarCSV("D:\\Users\\Caro\\Projects IntelliJ\\AutomataCelular\\src\\AutomataCelular\\Registros");
     }
 }
