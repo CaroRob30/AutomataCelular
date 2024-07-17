@@ -1,4 +1,4 @@
-package AutomataCelular;
+package AutomataCelular.Utilidades;
 
 public class Descripcion {
 
