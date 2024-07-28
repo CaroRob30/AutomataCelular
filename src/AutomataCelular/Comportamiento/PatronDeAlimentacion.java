@@ -20,7 +20,7 @@ public class PatronDeAlimentacion implements IPatronDeComportamiento {
 
             serVivo.setEnergia(serVivo.getEnergia() - Configuracion.ENERGIA_CONSUMIDA_DE_LA_PLANTA);
 
-            System.out.println("Comio: "  + serVivo.getClass().getSimpleName() + " n°: "+ serVivo.getId());
+            System.out.println("Comio: "  + serVivo.getClass().getSimpleName() + " n° "+ serVivo.getId());
 
     }
 }
