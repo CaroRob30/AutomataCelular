@@ -25,7 +25,7 @@ public class GestorDeReproduccion {
     }
 
     public void registrarReproduccion(Animal animal, SerVivo serVivo) {
-        procesoDeReproduccion.verificarReproduccion(animal, serVivo);
+        procesoDeReproduccion.iniciarReproduccion(animal, serVivo);
     }
 
     public static void limpiarParejasReproducidas() {
