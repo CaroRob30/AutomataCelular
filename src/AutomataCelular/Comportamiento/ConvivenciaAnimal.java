@@ -4,11 +4,11 @@ import AutomataCelular.SeresVivos.*;
 
 /*
 La clase 'ConvivenciaAnimal', gestiona las interacciones entre los animales y plantas en la simulación.
-Implementa la interfaz 'IConvivencia' y utiliza tres patrones de comportamiento:'PatronDeReproduccion',
+Implementa la interfaz 'IConvivencia' para dejar abierta la opción de la creación de diferentes maneras
+en que conviven los animales, además, esta clase utiliza tres patrones de comportamiento:'PatronDeReproduccion',
 'PatronDeAlimentacion' y 'PatronDeComunicacion' para determinar y ejecutar acciones específicas durante
 los encuentros entre los seres vivos, según el tipo de ser vivo encontrado y la cantidad total de seres vivos,
-la clase decide si los animales deben reproducirse, alimentarse o comunicarse. De igual manera permite que no
-haya mas de tres seres vivos en una celda.
+la clase decide si los animales deben reproducirse, alimentarse o comunicarse.
  */
 
 public class ConvivenciaAnimal implements IConvivencia {

@@ -23,6 +23,9 @@ public class Configuracion {
     public static final int COLUMNAS = 5;
     public static final int CICLOS = 10;
 
+    //Visualización de estadisticas en consola (true para mostrar, false para ocultar)
+    public static final boolean IMPRIMIR_ESTADISTICAS = true;
+
     //Configuración de los seres vivos iniciales
     public static final int PLANTAS_INICIALES = 5;
     public static final int PERROS_INICIALES = 5;
