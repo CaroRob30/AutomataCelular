@@ -12,7 +12,12 @@ import AutomataCelular.Movimiento.RegistrarUbicacion;
 import java.util.List;
 /*
 Esta clase es la encargada de manejar el proceso de reproducción de los animales. Utiliza 'FiltroDeReproduccion'
-para verificar si dos seres vivos pueden reproducirse según sus características y condiciones.
+para verificar si dos seres vivos pueden reproducirse según sus características y condiciones. Si la
+reproducción es posible, el método 'iniciarReproduccion' se encarga de buscar una celda vacía en la vecindad
+donde se pueda colocar la cría. Si se encuentra una celda vacía, se realiza la reproducción clonando uno de
+los animales y colocando a la cría en la celda vacía. Además, se registra el nacimiento de la cría en el
+'RegistroDeEventos' y se actualizan las estadísticas de nacimientos.
+También se consume la energia de los animales involucrados en el proceso de reproducción.
  */
 public class ProcesoDeReproduccion {
     private final RegistroDeEventos registroDeEventos;
