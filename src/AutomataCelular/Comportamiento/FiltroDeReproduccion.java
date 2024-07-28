@@ -13,7 +13,7 @@ reproduzcan nuevamente.
  */
 
 public class FiltroDeReproduccion {
-    private final static Set<String> parejasReproducidas = new HashSet<>();
+    final static Set<String> parejasReproducidas = new HashSet<>();
 
     public boolean sePuedenReproducir(Animal animal, SerVivo serVivo) {
         String parejaID = generarParejaID(animal, serVivo);
@@ -24,7 +24,7 @@ public class FiltroDeReproduccion {
                 ((Animal) serVivo).tieneEnergiaReproductiva();
     }
 
-    private String generarParejaID(SerVivo serVivo1, SerVivo serVivo2) {
+    String generarParejaID(SerVivo serVivo1, SerVivo serVivo2) {
         long id1 = serVivo1.getId();
         long id2 = serVivo2.getId();
         return id1 < id2 ? id1 + "-" + id2 : id2 + "-" + id1;
