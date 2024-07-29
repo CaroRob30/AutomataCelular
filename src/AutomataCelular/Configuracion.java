@@ -19,15 +19,15 @@ public class Configuracion {
             "D:\\Users\\Caro\\Projects IntelliJ\\AutomataCelular\\src\\AutomataCelular\\Registros";
 
     //Configuración del tablero (Filas, Columnas y Ciclos)
-    public static final int FILAS = 5;
-    public static final int COLUMNAS = 5;
+    public static final int FILAS = 3;
+    public static final int COLUMNAS = 3;
     public static final int CICLOS = 10;
 
     //Visualización de estadisticas en consola (true para mostrar, false para ocultar)
     public static final boolean IMPRIMIR_ESTADISTICAS = true;
 
     //Configuración de los seres vivos iniciales
-    public static final int PLANTAS_INICIALES = 5;
+    public static final int PLANTAS_INICIALES = 3;
     public static final int PERROS_INICIALES = 5;
     public static final int GATOS_INICIALES = 0;
     public static final int RATONES_INICIALES = 0;
@@ -44,7 +44,7 @@ public class Configuracion {
     public static final int ENERGIA_MAX_ANIMAL = 15;
 
     //Configuracion adicional de los animales
-    public static final int EDAD_PARA_PODER_REPRODUCIRSE = 4;
+    public static final int EDAD_PARA_PODER_REPRODUCIRSE = 2;
     public static final int ENERGIA_CONSUMIDA_POR_REPRODUCCION = 3;
     public static final int ENERGIA_CONSUMIDA_POR_INTERACTUAR_CON_ANIMALES = 2;
 
