@@ -1,12 +1,20 @@
 package AutomataCelular.Estadisticas;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+/*
+La clase 'RegistroDeEventos' actúa como un Singleton que gestiona y almacena los eventos durante la simulación,
+como los nacimientos o muertes de los seres vivos. Contiene una lista de registros de eventos y un mapa que
+organiza los eventos por ciclo. La variable 'cicloActual' se incrementa con cada llamada al método
+'incrementarCiclo', que también actualiza las estadísticas del ciclo y limpia los IDs de muertes registradas.
+La clase se asegura de que los eventos se registren una única vez por ID mediante un conjunto para evitar
+duplicados.
+También los métodos para recuperar los registros y eventos por ciclo, son utilizados para generar un archivo CSV.
+ */
 
 public class RegistroDeEventos {
     private static final List<String> registros = new ArrayList<>();
@@ -25,7 +33,7 @@ public class RegistroDeEventos {
     public void incrementarCiclo() {
         cicloActual++;
         RegistroDeEstadisticas.getRegistroDeEstadisticas().registrarEstadisticas(cicloActual, registros);
-        idsRegistradosMuerte.clear(); // Limpiar los IDs registrados al inicio de cada ciclo
+        idsRegistradosMuerte.clear();
     }
 
     public void registrarNacimiento(String especie, int id, int[] posicion) {
@@ -34,10 +42,11 @@ public class RegistroDeEventos {
     }
 
     public void registrarMuerte(String especie, int id, int[] posicion) {
-        if (!idsRegistradosMuerte.contains(id)) { // Verificar si el ID ya fue registrado
-            String evento = "Muerte; " + especie + ": " + id + "; " + cicloActual + "; [" + posicion[0] + "; " + posicion[1] + "]";
+        if (!idsRegistradosMuerte.contains(id)) {
+            String evento = "Muerte; " + especie + ": " + id + "; "
+                    + cicloActual + "; [" + posicion[0] + "; " + posicion[1] + "]";
             eventosPorCiclo.computeIfAbsent(cicloActual, k -> new ArrayList<>()).add(evento);
-            idsRegistradosMuerte.add(id); // Añadir el ID al conjunto para evitar duplicados
+            idsRegistradosMuerte.add(id);
         }
     }
 
