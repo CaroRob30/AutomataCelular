@@ -9,7 +9,6 @@ como un Singleton, asegurando que solo haya una única instancia que recopile lo
 La clase tiene un lista de movimientos, cada uno asociado con la especie, el ID, el ciclo actual y las posiciones
 incial y final del movimiento.
 Tambien proporciona métodos para registrar un movimiento y obtener la lista de movimientos.
-
  */
 
 public class RegistroDeMovimientos {

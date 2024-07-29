@@ -8,7 +8,6 @@ De igual forma hay parámetros para establecer las características de los seres
 su energia inicial y máxima. En cuanto a los animales se le agregan más parámetros como la edad inicial, máxima,
 edad reproductiva, la energía necesaria para reproducirse, la cantidad de energia que absorben de las plantas
 y la energía utilizada en interacciones entre animales.
-
  */
 
 public class Configuracion {
@@ -20,18 +19,18 @@ public class Configuracion {
             "D:\\Users\\Caro\\Projects IntelliJ\\AutomataCelular\\src\\AutomataCelular\\Registros";
 
     //Configuración del tablero (Filas, Columnas y Ciclos)
-    public static final int FILAS = 3;
-    public static final int COLUMNAS = 3;
+    public static final int FILAS = 10;
+    public static final int COLUMNAS = 10;
     public static final int CICLOS = 10;
 
     //Visualización de estadisticas en consola (true para mostrar, false para ocultar)
-    public static final boolean IMPRIMIR_ESTADISTICAS = true;
+    public static final boolean IMPRIMIR_ESTADISTICAS = false;
 
     //Configuración de los seres vivos iniciales
-    public static final int PLANTAS_INICIALES = 3;
-    public static final int PERROS_INICIALES = 5;
-    public static final int GATOS_INICIALES = 0;
-    public static final int RATONES_INICIALES = 0;
+    public static final int PLANTAS_INICIALES = 10;
+    public static final int PERROS_INICIALES = 4;
+    public static final int GATOS_INICIALES = 4;
+    public static final int RATONES_INICIALES = 2;
 
     //Configuración de las Plantas
     public static final int ENERGIA_INICIAL_PLANTA = 10;

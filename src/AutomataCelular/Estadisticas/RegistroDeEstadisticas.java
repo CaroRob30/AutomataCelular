@@ -5,7 +5,6 @@ import java.util.List;
 Esta clase, mediante un Singleton, se encarga de registrar las estadísticas de la simulación en una lista.
 Tiene el método 'registrarEstadisticas' que recibe el ciclo actual y la lista de registros y agrega
 las estadísticas de la simulación a la lista.
-
  */
 
 public class RegistroDeEstadisticas {

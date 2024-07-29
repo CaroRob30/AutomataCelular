@@ -2,9 +2,7 @@ package AutomataCelular;
 
 import AutomataCelular.Estadisticas.RegistroDeSeresVivos;
 import AutomataCelular.SeresVivos.*;
-import AutomataCelular.Estadisticas.ImpresoraDeEstadisticas;
 import AutomataCelular.UbicacionSeresVivos.Celda;
-import AutomataCelular.Movimiento.RegistrarUbicacion;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -22,7 +20,6 @@ de la simulación.
 
 public class Tablero {
     private static Tablero tablero;
-    private final ImpresoraDeEstadisticas impresoraDeEstadisticas;
     private final int filas;
     private final int columnas;
     private final Celda[][] celdas;
@@ -33,7 +30,6 @@ public class Tablero {
         this.columnas = Configuracion.COLUMNAS;
         this.celdas = new Celda[filas][columnas];
         this.random = new Random();
-        this.impresoraDeEstadisticas = new ImpresoraDeEstadisticas();
 
         iniciarTablero();
     }
