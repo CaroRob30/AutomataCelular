@@ -1,6 +1,6 @@
 package AutomataCelular.Comportamiento;
 
-import AutomataCelular.Estadisticas.Estadisticas;
+import AutomataCelular.Estadisticas.RegistroDeSeresVivos;
 import AutomataCelular.Estadisticas.RegistroDeEventos;
 import AutomataCelular.UbicacionSeresVivos.Celda;
 import AutomataCelular.Configuracion;
@@ -53,7 +53,7 @@ public class ProcesoDeReproduccion {
             Animal cria = animal.clonar((Animal) serVivo);
             celdaVecina.agregarSerVivo(cria);
             registroDeEventos.registrarNacimiento(serVivo.getClass().getSimpleName(), cria.getId(), posicion);
-            Estadisticas.registrarNacimiento(cria.getClass().getSimpleName());
+            RegistroDeSeresVivos.registrarNacimiento(cria.getClass().getSimpleName());
             animal.consumirEnergiaPorReproduccion();
             ((Animal) serVivo).consumirEnergiaPorReproduccion();
             System.out.println("Se reprodujeron: " + animal.getClass().getSimpleName() + " n° " + animal.getId()

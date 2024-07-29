@@ -18,6 +18,5 @@ public class PatronDeReproduccion implements IPatronDeComportamiento {
     @Override
     public void iniciar(Animal animal, SerVivo serVivo) {
         reproductor.reproducir(animal, serVivo);
-        GestorDeReproduccion.limpiarParejasReproducidas();
     }
 }
