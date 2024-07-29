@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Final">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AutomataCelular/Registros/registroDeMovimientos.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Comportamiento/IConvivencia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/Contador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/Contador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/ContadorDeSeresVivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/ContadorDeSeresVivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/Estadisticas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/RegistroDeEstadisticas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/RegistroDeEstadisticas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/RegistroDeEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Estadisticas/RegistroDeEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Movimiento/MovimientoAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Movimiento/MovimientoAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Registros/registroDeEventos.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Registros/registroDeEventos.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/ActualizadorDeEstado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/GeneradorDeSimulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/GeneradorDeSimulacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Simulacion/GestorDeConvivencia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/UbicacionSeresVivos/Celda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/UbicacionSeresVivos/Celda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/Descripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/Descripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/MostrarTablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomataCelular/Utilidades/MostrarTablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a807ec46-1e40-4a2e-ae7a-00670a28d924" name="Changes" comment="Final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,22 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720156436227</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Avance 17/07">
-      <option name="closed" value="true" />
-      <created>1721258223115</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1721258223115</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Avance 17/07">
-      <option name="closed" value="true" />
-      <created>1722198722198</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1722198722198</updated>
     </task>
     <task id="LOCAL-00010" summary="Avance 17/07">
       <option name="closed" value="true" />
@@ -494,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722225254763</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Final">
+      <option name="closed" value="true" />
+      <created>1722230707644</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1722230707644</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Final">
+      <option name="closed" value="true" />
+      <created>1722230815428</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1722230815428</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="UnknownFeatures">
