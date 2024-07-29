@@ -26,22 +26,18 @@ si está configurado, muestra las estadisticas. Además, se realiza una pausa de
 
 public class GeneradorDeSimulacion {
     private final ActualizadorDeSeresVivos actualizadorDeSeresVivos;
-    private ImpresoraDeEstadisticas impresoraDeEstadisticas;
     private final GestorDeMovimiento gestorDeMovimiento;
     private final GestorDeConvivencia gestorDeConvivencia;
     private final MostrarTablero mostrarTablero;
     private final RegistroDeEventos registroDeEventos;
-    private final RegistroDeMovimientos registroDeMovimientos;
 
     public GeneradorDeSimulacion() {
         Tablero tablero = Tablero.getInstancia();
         this.actualizadorDeSeresVivos = new ActualizadorDeSeresVivos();
         this.gestorDeMovimiento = new GestorDeMovimiento();
         this.gestorDeConvivencia = new GestorDeConvivencia(tablero);
-        this.impresoraDeEstadisticas = new ImpresoraDeEstadisticas();
         this.mostrarTablero = new MostrarTablero();
         this.registroDeEventos = RegistroDeEventos.getInstancia();
-        this.registroDeMovimientos = RegistroDeMovimientos.getInstancia();
     }
 
     public void iniciar(int iteraciones) {
@@ -51,13 +47,13 @@ public class GeneradorDeSimulacion {
             executor.submit(() -> {
                 System.out.println("Año: " + (ciclo + 1));
                 registroDeEventos.incrementarCiclo();
-                registroDeMovimientos.incrementarCiclo();
+                RegistroDeMovimientos.incrementarCiclo();
                 mostrarTablero.mostrarTablero();
                 gestorDeMovimiento.ejecutarMovimiento();
                 gestorDeConvivencia.ejecutarConvivencia();
                 actualizadorDeSeresVivos.actualizarSeresVivos();
                 if (Configuracion.IMPRIMIR_ESTADISTICAS) {
-                    impresoraDeEstadisticas.imprimirEstadisticas();
+                    ImpresoraDeEstadisticas.imprimirEstadisticas();
                 }
                 System.out.println("----------------------------------------------");
                 try {

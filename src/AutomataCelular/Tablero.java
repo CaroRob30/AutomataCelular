@@ -1,15 +1,27 @@
 package AutomataCelular;
 
+import AutomataCelular.Estadisticas.RegistroDeSeresVivos;
 import AutomataCelular.SeresVivos.*;
-import AutomataCelular.Estadisticas.Estadisticas;
+import AutomataCelular.Estadisticas.ImpresoraDeEstadisticas;
 import AutomataCelular.UbicacionSeresVivos.Celda;
-import AutomataCelular.UbicacionSeresVivos.RegistrarUbicacion;
+import AutomataCelular.Movimiento.RegistrarUbicacion;
 
 import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+/*
+La clase 'Tablero' actúa como gestor central del entorno de la simulación. Inicializa y mantiene una serie de
+celdas en las cuales se coloca un ser vivo, ya sean plantas o animales.
+Utiliza un patron Singleton para garantizar que solo exista una instancia de la clase 'Tablero'.
+La clase también se encarga de la inicialización por defecto de los seres vivos en el tablero, utilizando un
+ExecutorService para ejecutar las tareas de inicialización de los seres vivos en paralelo.
+Tiene métodos para acceder a las celdas del tablero y a sus dimensiones, facilitando la gestión del estado
+de la simulación.
+ */
 
 public class Tablero {
     private static Tablero tablero;
-    private final Estadisticas estadisticas;
+    private final ImpresoraDeEstadisticas impresoraDeEstadisticas;
     private final int filas;
     private final int columnas;
     private final Celda[][] celdas;
@@ -20,7 +32,7 @@ public class Tablero {
         this.columnas = Configuracion.COLUMNAS;
         this.celdas = new Celda[filas][columnas];
         this.random = new Random();
-        this.estadisticas = new Estadisticas();
+        this.impresoraDeEstadisticas = new ImpresoraDeEstadisticas();
 
         iniciarTablero();
     }
@@ -38,30 +50,36 @@ public class Tablero {
                 celdas[i][j] = new Celda();
             }
         }
-        for (int i = 0; i < Configuracion.PLANTAS_INICIALES; i++) {
-            int x = random.nextInt(filas);
-            int y = random.nextInt(columnas);
-            celdas[x][y].agregarSerVivo(new Planta());
-            estadisticas.registrarSeresVivos("Planta");
+        ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        executor.submit(() -> inicializarSeresVivos(Configuracion.PLANTAS_INICIALES, Planta.class));
+        executor.submit(() -> inicializarSeresVivos(Configuracion.GATOS_INICIALES, Gato.class));
+        executor.submit(() -> inicializarSeresVivos(Configuracion.RATONES_INICIALES, Raton.class));
+        executor.submit(() -> inicializarSeresVivos(Configuracion.PERROS_INICIALES, Perro.class));
 
+        executor.shutdown();
+        try {
+            executor.awaitTermination(Long.MAX_VALUE, java.util.concurrent.TimeUnit.NANOSECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        for (int i = 0; i < Configuracion.GATOS_INICIALES; i++) {
+    }
+
+    private <T extends SerVivo> void inicializarSeresVivos(int cantidad, Class<T> serVivo) {
+        int incializados = 0;
+        while (incializados < cantidad) {
             int x = random.nextInt(filas);
             int y = random.nextInt(columnas);
-            celdas[x][y].agregarSerVivo(new Gato());
-            estadisticas.registrarSeresVivos("Gato");
-        }
-        for (int i = 0; i < Configuracion.PERROS_INICIALES; i++) {
-            int x = random.nextInt(filas);
-            int y = random.nextInt(columnas);
-            celdas[x][y].agregarSerVivo(new Perro());
-            estadisticas.registrarSeresVivos("Perro");
-        }
-        for (int i = 0; i < Configuracion.RATONES_INICIALES; i++) {
-            int x = random.nextInt(filas);
-            int y = random.nextInt(columnas);
-            celdas[x][y].agregarSerVivo(new Raton());
-            estadisticas.registrarSeresVivos("Raton");
+            synchronized (this) {
+                if (celdas[x][y].getSeresVivos().size() == 0) {
+                    try {
+                        celdas[x][y].agregarSerVivo(serVivo.getDeclaredConstructor().newInstance());
+                        RegistroDeSeresVivos.registrarSeresVivos(serVivo.getSimpleName());
+                        incializados++;
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
     }
 
@@ -82,20 +100,5 @@ public class Tablero {
             return celdas[x][y];
         }
         return null;
-    }
-
-    public static int[] obtenerPosicion(SerVivo serVivo) {
-        Celda celdaBuscada = RegistrarUbicacion.obtenerUbicacion(serVivo);
-        if (celdaBuscada != null) {
-            Celda[][] celdas = Tablero.getInstancia().getCeldas();
-            for (int fila = 0; fila < Configuracion.FILAS; fila++) {
-                for (int columna = 0; columna < Configuracion.COLUMNAS; columna++) {
-                    if (celdas[fila][columna].equals(celdaBuscada)) {
-                        return new int[]{fila, columna};
-                    }
-                }
-            }
-        }
-        return new int[]{-1, -1}; // O considerar lanzar una excepción si es más apropiado
     }
 }

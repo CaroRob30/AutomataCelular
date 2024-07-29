@@ -9,12 +9,4 @@ public class ContadorDeSeresVivos {
     public static int getTotalEspecie(String especie) {
         return Contador.getContadorDeSeresVivos().getOrDefault(especie, 0);
     }
-
-    public static int getTotalDeSeresVivos() {
-        int total = 0;
-        for (int count : Contador.getContadorDeSeresVivos().values()) {
-            total += count;
-        }
-        return total;
-    }
 }

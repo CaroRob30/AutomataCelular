@@ -14,7 +14,7 @@ Al agregar un ser vivo, se verifica si ya hay dos animales en la celda, en cuyo 
 Además de tener un control de la ubicación de los seres vivos.
  */
 public class Celda {
-    private List<SerVivo> seresVivos;
+    private final List<SerVivo> seresVivos;
 
     public Celda() {
         this.seresVivos = new ArrayList<>();
@@ -49,7 +49,7 @@ public class Celda {
         }
         return false;
     }
-    public boolean puedeAgregarSerVivo(Animal animal) {
+    public boolean puedeAgregarSerVivo() {
         long cantidadAnimales = seresVivos.stream().filter(serVivo -> serVivo instanceof Animal).count();
         return cantidadAnimales < 2;
     }

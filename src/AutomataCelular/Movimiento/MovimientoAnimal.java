@@ -40,7 +40,7 @@ public class MovimientoAnimal {
             if (nuevaFila >= 0 && nuevaFila < tablero.length && nuevaColumna >= 0 && nuevaColumna < tablero[0].length) {
                 Celda celdaDestino = tablero[nuevaFila][nuevaColumna];
 
-                if (celdaDestino.puedeAgregarSerVivo(animal)) {
+                if (celdaDestino.puedeAgregarSerVivo()) {
                     synchronized (this) {
                         if (celdaActual.contieneSerVivo(animal)) {
                             celdaActual.eliminarSerVivo(animal);

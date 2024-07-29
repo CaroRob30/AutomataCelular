@@ -20,7 +20,7 @@ public class RegistroDeEstadisticas {
         int totalPlantas = ContadorDeSeresVivos.getTotalEspecie("Planta");
         int totalNacimientos = RegistroDeSeresVivos.getTotalDeSeresNacidos();
         int totalMuertes = RegistroDeSeresVivos.getTotalDeSeresMuertos();
-        int totalAnimales = ContadorDeSeresVivos.getTotalDeSeresVivos() - totalPlantas;
+        int totalAnimales = RegistroDeSeresVivos.getTotalDeSeresVivos() - totalPlantas;
 
         String estadisticas = cicloActual + ";" + totalAnimales + ";" + totalPlantas + ";"
                 + totalNacimientos + ";" + totalMuertes + ";";

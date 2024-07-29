@@ -37,13 +37,14 @@ public class RegistroDeEventos {
     }
 
     public void registrarNacimiento(String especie, int id, int[] posicion) {
-        String evento = "Nacimiento; " + especie + ": " + id + "; " + cicloActual + "; [" + posicion[0] + "; " + posicion[1] + "]";
+        String evento = "Nacimiento; " + especie + " n° " + id + "; " + cicloActual
+                + "; [" + posicion[0] + "; " + posicion[1] + "]";
         eventosPorCiclo.computeIfAbsent(cicloActual, k -> new ArrayList<>()).add(evento);
     }
 
     public void registrarMuerte(String especie, int id, int[] posicion) {
         if (!idsRegistradosMuerte.contains(id)) {
-            String evento = "Muerte; " + especie + ": " + id + "; "
+            String evento = "Muerte; " + especie + " n° " + id + "; "
                     + cicloActual + "; [" + posicion[0] + "; " + posicion[1] + "]";
             eventosPorCiclo.computeIfAbsent(cicloActual, k -> new ArrayList<>()).add(evento);
             idsRegistradosMuerte.add(id);
