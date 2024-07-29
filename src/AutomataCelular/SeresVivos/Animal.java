@@ -5,7 +5,7 @@ import AutomataCelular.SeresVivos.Crias.GatoCria;
 import AutomataCelular.SeresVivos.Crias.PerroCria;
 import AutomataCelular.SeresVivos.Crias.RatonCria;
 /*
-Esta clase abstracta 'Animal' define el comportamiento y las características comunes de todos los animales.
+Esta clase abstracta define el comportamiento y las características comunes de todos los animales.
 Hereda de la clase 'SerVivo' y agrega  propiedades específicas de los animales como la edad.
 Se define la energía inciial y la edad inicial de los animales.
 Proporciona métodos para simular el paso del tiempo, verificar si el animal está vivo, gestionar aspectos

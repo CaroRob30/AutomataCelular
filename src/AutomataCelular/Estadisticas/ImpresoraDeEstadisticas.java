@@ -1,7 +1,7 @@
 package AutomataCelular.Estadisticas;
 /*
-Esta clase, en caso de estar activa su funcionalidad en la clase Configuración, se encarga de imprimir
-las estadísticas de la simulación al final de cada ciclo.
+Esta clase, en caso de estar activa su funcionalidad en la clase Configuración, se encarga de imprimir las
+estadísticas de la simulación al final de cada ciclo.
  */
 
 public class ImpresoraDeEstadisticas {

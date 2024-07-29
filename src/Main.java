@@ -10,6 +10,7 @@ La clase principal se encarga de la ejecución de la simulación.
 Inicializa la descripción de la simulación, crea instancias de los generadores de CSV que registran
 eventos y movimientos, obtiene la instancia del tablero e inicia la simulación a través del automatacelular
 con el número especificado de ciclos en la clase Configuración.
+
  */
 
 public class Main {

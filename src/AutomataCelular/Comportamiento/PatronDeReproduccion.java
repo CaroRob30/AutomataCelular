@@ -3,7 +3,7 @@ package AutomataCelular.Comportamiento;
 import AutomataCelular.SeresVivos.Animal;
 import AutomataCelular.SeresVivos.SerVivo;
 /*
-Esta clase encapula la lógica de la reproducción de los seres vivos en la simulación delegando la lógica a la
+Esta clase encapsula la lógica de la reproducción de los seres vivos en la simulación delegando la lógica a la
 clase 'Reproductor' que se encarga de la reproducción de los seres vivos. Lo cual facilita la extensión y
 modificación de las reglas de reproducción sin afectar al programa.
  */

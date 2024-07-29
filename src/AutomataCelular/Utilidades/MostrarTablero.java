@@ -10,6 +10,7 @@ Si una celda está vacía, imprime un "°". Si la celda contiene seres vivos, co
 detalles de cada ser vivo, su ID, especie, energía y edad(solo para animales), después de contruir la cadena,
 imprime esta información en la consola, mostrando el contenido de cada celda y el número de animales en ella.
 Esta clase ayuda a visualizar el comportamiento de los seres vivos en el tablero.
+
  */
 
 public class MostrarTablero {

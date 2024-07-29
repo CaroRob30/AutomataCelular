@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 /*
 La clase DetectorDeVecinos se encarga de identificar las posiciones adyacentes a una celda en específico dentro
-de los límites establecidos.
-El método 'detectarVecinos' devuelve una lista de posiciones válidas de las celdas vecinas (arriba, abajo,
-izquierda y derecha) que están dentro de los límites de la cuadrícula.
+de los límites establecidos. El método 'detectarVecinos' devuelve una lista de posiciones válidas
+de las celdas vecinas (arriba, abajo, izquierda y derecha) que están dentro de los límites de la cuadrícula.
 Utiliza el método 'laPosicionEsValida' para asegurarse de que las posiciones calculadas no estén fuera del
 rango válido de la cuadrícula.
  */

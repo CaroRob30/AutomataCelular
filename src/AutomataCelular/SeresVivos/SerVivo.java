@@ -1,8 +1,8 @@
 package AutomataCelular.SeresVivos;
 /*
 La clase abstracta 'SerVivo' define los métodos abstractos que deben de ser implementados pos las clases hijas.
-Como es el método 'estaVivo()', 'pasoDelTiempo()' y 'sonDeLaMismaEspecie()'.
-De igual manera la clase maneja la energía del ser vivo a través de getters y setters.
+Como es el método 'estaVivo()', 'pasoDelTiempo()' y 'sonDeLaMismaEspecie()'. De igual manera la
+clase maneja la energía del ser vivo a través de getters y setters.
 También se implemento un identificador unico para
  */
 

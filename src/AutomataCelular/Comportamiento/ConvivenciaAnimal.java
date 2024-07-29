@@ -3,7 +3,7 @@ package AutomataCelular.Comportamiento;
 import AutomataCelular.SeresVivos.*;
 
 /*
-La clase 'ConvivenciaAnimal', gestiona las interacciones entre los animales y plantas en la simulación.
+'ConvivenciaAnimal', gestiona las interacciones entre los animales y plantas en la simulación.
 Utiliza tres patrones de comportamiento:'PatronDeReproduccion','PatronDeAlimentacion' y 'PatronDeComunicacion'
 para determinar y ejecutar acciones específicas durante los encuentros entre los seres vivos, según el tipo
 de ser vivo encontrado y la cantidad total de seres vivos, la clase decide si los animales deben reproducirse,

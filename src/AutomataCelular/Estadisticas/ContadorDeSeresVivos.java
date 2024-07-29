@@ -1,6 +1,6 @@
 package AutomataCelular.Estadisticas;
 /*
-Esta clase se encarga de calcular y devolver el total de seres vivos de una especie en específico
+La clase se encarga de calcular y devolver el total de seres vivos de una especie en específico
 y el total de seres vivos en la simulación.
 'getTotalEspecie' devuelve el total de seres vivos de una especie en específico.
 'getTotalDeSeresVivos' devuelve el total de seres vivos en la simulación.

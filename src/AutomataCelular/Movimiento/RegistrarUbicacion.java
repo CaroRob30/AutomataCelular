@@ -6,7 +6,7 @@ import AutomataCelular.UbicacionSeresVivos.Celda;
 import java.util.HashMap;
 import java.util.Map;
 /*
-Gestiona la ubicación y posición de los seres vivos en el tablero.
+Esta clase gestiona la ubicación y posición de los seres vivos en el tablero.
 Utiliza dos mapas: uno para asociar cada ser vivo con una celda en específico, y el otro para registrar las
 coordenadas de cada ser vivo.
 tiene métodos para establecer y obtener la ubicación y posición de un ser vivo.

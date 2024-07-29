@@ -4,7 +4,7 @@ import AutomataCelular.Configuracion;
 import AutomataCelular.SeresVivos.Animal;
 import AutomataCelular.SeresVivos.SerVivo;
 /*
-Esta clase implementa la interfaz 'IPatronDeComportamiento' y define el método 'iniciar' que se encarga de
+La clase implementa la interfaz 'IPatronDeComportamiento' y define el método 'iniciar' que se encarga de
 incremetar la energía del animal que se alimenta de la planta y disminuir la energía de la planta, hasta un
 máximo de energía permitida para el animal. De igual manera, la energía de la planta disminuye por la cantidad
 predeterminada en la configuración de la simulación.

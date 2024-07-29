@@ -6,8 +6,8 @@ import AutomataCelular.Tablero;
 
 import java.util.List;
 /*
-La clase 'GestorDeConvivencia', se encarga de gestionar las interacciones entre los seres vivos
-en el tablero de la simulación.
+'GestorDeConvivencia', se encarga de gestionar las interacciones entre los seres vivos en el tablero de
+la simulación.
 Utiliza un objeto 'Tablero' para acceder a las celdas que contienen los seres vivos.
 De igual manera, utiliza una instancia de 'ConvivenciaAnimal' para manejar los encuentros entre los seres vivos.
 El método 'ejecutarConvivencia' hace un recorrido de todaslas celdas del tablero y, si hay más de un ser vivo

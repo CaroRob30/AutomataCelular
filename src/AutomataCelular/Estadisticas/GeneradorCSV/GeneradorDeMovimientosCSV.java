@@ -5,8 +5,8 @@ import java.io.PrintWriter;
 import java.util.List;
 /*
 Esta clase extiende también de la clase abstracta 'GeneradorCSV'.
-Sobreescribe los métodos 'getNombreArchivo' y 'escribirContenido'
-para generar un archivo CSV con los movimientos registrados.
+Sobreescribe los métodos 'getNombreArchivo' y 'escribirContenido' para generar un archivo
+CSV con los movimientos registrados.
  */
 public class GeneradorDeMovimientosCSV extends GeneradorCSV {
 

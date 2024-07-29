@@ -8,6 +8,7 @@ De igual forma hay parámetros para establecer las características de los seres
 su energia inicial y máxima. En cuanto a los animales se le agregan más parámetros como la edad inicial, máxima,
 edad reproductiva, la energía necesaria para reproducirse, la cantidad de energia que absorben de las plantas
 y la energía utilizada en interacciones entre animales.
+
  */
 
 public class Configuracion {

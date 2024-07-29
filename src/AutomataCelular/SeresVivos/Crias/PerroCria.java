@@ -4,7 +4,7 @@ import AutomataCelular.Configuracion;
 import AutomataCelular.SeresVivos.Animal;
 import AutomataCelular.SeresVivos.Perro;
 /*
-Esta clase hereda la clase abstracta Cria e implementa el método nacer() para crear una nueva instancia de Perro.
+'PerroCria' hereda la clase abstracta Cria e implementa el método nacer() para crear una nueva instancia de Perro.
  */
 
 public class PerroCria extends Cria {

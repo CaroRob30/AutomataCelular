@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 /*
-La clase 'GeneradorDeEventosCSV' extiende de la clase abstracta 'GeneradorCSV' y se encarga de generar un
+'GeneradorDeEventosCSV' extiende de la clase abstracta 'GeneradorCSV' y se encarga de generar un
 archivo CSV que registra eventos de la simulación. El método 'getNombreArchivo' retorna el nombre del archivo.
 Y el método 'escribirContenido' escribe el contenido del archivo CSV con los eventos registrados
 en 'RegistroDeEventos'.

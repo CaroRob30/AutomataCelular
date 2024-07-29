@@ -3,7 +3,7 @@ package AutomataCelular.Comportamiento;
 import AutomataCelular.SeresVivos.Animal;
 import AutomataCelular.SeresVivos.SerVivo;
 /*
-Esta clase gestiona el proceso de reproducción entre los animales de la simulación. Utiliza dos clases auxiliares:
+La clase gestiona el proceso de reproducción entre los animales de la simulación. Utiliza dos clases auxiliares:
 'FiltroDeReproduccion' y 'ProcesoDeReproduccion' para determinar si los animales pueden reproducirse y registrar.
 El método 'sePuedenReproducir' consulta a la clase 'FiltroDeReproduccion' para determinar si los animales cumplen
 con las condiciones necesarias para reproducirse. Si es así, llama al método 'registrarReproduccion' para delegar

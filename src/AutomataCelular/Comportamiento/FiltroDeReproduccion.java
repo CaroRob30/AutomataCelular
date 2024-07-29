@@ -6,7 +6,7 @@ import AutomataCelular.SeresVivos.SerVivo;
 import java.util.HashSet;
 import java.util.Set;
 /*
-Esta clase se encarga de filtrar las parejas que se pueden reproducir, así como el hecho de ser de la misma especie,
+La clase se encarga de filtrar las parejas que se pueden reproducir, así como el hecho de ser de la misma especie,
 estar en edad reproductiva y tener la energía necesaria para reproducirse.
 De igual manera, se encarga de llevar un registro de las parejas que ya se han reproducido para evitar que se
 reproduzcan nuevamente.

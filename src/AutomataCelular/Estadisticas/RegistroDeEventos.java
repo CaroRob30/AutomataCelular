@@ -14,6 +14,7 @@ organiza los eventos por ciclo. La variable 'cicloActual' se incrementa con cada
 La clase se asegura de que los eventos se registren una única vez por ID mediante un conjunto para evitar
 duplicados.
 También los métodos para recuperar los registros y eventos por ciclo, son utilizados para generar un archivo CSV.
+
  */
 
 public class RegistroDeEventos {

@@ -1,7 +1,7 @@
 package AutomataCelular.Utilidades;
 /*
-Esta clase muestra una descripción de la simulación al usuario.
-Dando un tiempo de 10 segundos para que el usuario pueda leer la descripción.
+Esta clase muestra una descripción de la simulación al usuario. Dando un tiempo de
+10 segundos para que el usuario pueda leer la descripción.
  */
 
 public class Descripcion {

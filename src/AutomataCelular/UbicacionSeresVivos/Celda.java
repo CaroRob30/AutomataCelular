@@ -40,7 +40,6 @@ public class Celda {
         return seresVivos.isEmpty();
     }
 
-
     public boolean contieneSerVivo(Animal animal) {
         for (SerVivo serVivo : seresVivos) {
             if (serVivo instanceof Animal && ((Animal) serVivo).getId() == animal.getId()) {

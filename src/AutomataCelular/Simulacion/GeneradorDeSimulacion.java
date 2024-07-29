@@ -22,6 +22,7 @@ un ExecutorService para gestionar las tareas.
 Durante cada iteracción, la clase actualiza el tablero, ejecuta el movimiento de los seres vivos,
 gestiona la convivencia entre los seres vivos, actualiza los seres vivos, muestra en pantalla el tablero, y,
 si está configurado, muestra las estadisticas. Además, se realiza una pausa de 3 segundos entre iteracciones.
+
  */
 
 public class GeneradorDeSimulacion {

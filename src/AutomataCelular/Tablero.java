@@ -17,6 +17,7 @@ La clase también se encarga de la inicialización por defecto de los seres vivo
 ExecutorService para ejecutar las tareas de inicialización de los seres vivos en paralelo.
 Tiene métodos para acceder a las celdas del tablero y a sus dimensiones, facilitando la gestión del estado
 de la simulación.
+
  */
 
 public class Tablero {

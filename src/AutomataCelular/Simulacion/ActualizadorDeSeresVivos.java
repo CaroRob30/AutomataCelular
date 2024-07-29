@@ -12,6 +12,7 @@ import java.util.List;
 Esta clase se encarga de actualizar el estado de los seres vivos en el tablero. Para cada celda del tablero,
 se verifica cada ser vivo, llamando al método 'pasoDelTiempo' y eliminando aquellos que ya no estén vivos.
 Registra las muertes en 'RegistroDeEventos' y en 'RegistroDeSeresVivos', actualizando las estadísticas.
+
  */
 
 public class ActualizadorDeSeresVivos {

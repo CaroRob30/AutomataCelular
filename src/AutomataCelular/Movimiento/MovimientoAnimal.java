@@ -7,7 +7,7 @@ import AutomataCelular.SeresVivos.Animal;
 import java.util.List;
 import java.util.Random;
 /*
-La clase 'MovimientoAnimal' se encarga del movimiento de los animales en el tablero. Utiliza la instancia
+'MovimientoAnimal' se encarga del movimiento de los animales en el tablero. Utiliza la instancia
 'RegistroDeMovimientos' para registrar cada movimiento realizado. La funcion 'moverAnimal' recibe un animal
 y sus coordenadas actuales en el tablero, y primero verifica que el animal esté presente en su ubicación actual.
 Luego, obtiene las posiciones vecinas válidas y selecciona una posición aleatoria para mover al animal.

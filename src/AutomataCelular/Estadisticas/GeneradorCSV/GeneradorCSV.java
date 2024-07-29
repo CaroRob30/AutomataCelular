@@ -4,7 +4,7 @@ import AutomataCelular.Configuracion;
 
 import java.io.PrintWriter;
 /*
-Esta clase abstracta se facilita la generación de archivos CSV con información proporcionada.
+La clase abstracta se facilita la generación de archivos CSV con información proporcionada.
 Define dos métodos abstractos que deben ser implementados por las clases que hereden de esta.
 El método 'getNombreArchivo' debe retornar el nombre del archivo CSV que se desea generar.
 El método 'escribirContenido' debe escribir el contenido del archivo CSV.

@@ -11,7 +11,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 /*
-Esta clase se encarga de gestionar y ejecutar los movimientos de los animales en un tablero de la simulación.
+La clase se encarga de gestionar y ejecutar los movimientos de los animales en un tablero de la simulación.
 Utiliza un ExecutorService para ejecutar los movimientos de los animales de manera simultanea, asegurando que
 los animales se muevan de manera eficiente y sin interferencias.
 Recorre el tablero celda por celda, identificando a los animales en cada celda y enviando tareas para mover

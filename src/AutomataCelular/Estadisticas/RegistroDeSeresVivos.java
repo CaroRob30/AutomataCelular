@@ -6,6 +6,7 @@ estáticos para el número total de seres vivos, muertos y nacidos. También tie
 seres vivos, nacimientos y muertes, que actualizan estos contadores.
 De igual manera, proporciona métodos para obtener el total de seres vivos, muertos y nacidos, permitiendo
 un seguimiento de la población de seres vivos en la simulación.
+
  */
 
 public class RegistroDeSeresVivos {
