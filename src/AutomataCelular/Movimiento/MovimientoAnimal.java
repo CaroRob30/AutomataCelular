@@ -52,6 +52,7 @@ public class MovimientoAnimal {
                     registroDeMovimientos.registrarMovimiento(animal.getClass().getSimpleName(), animal.getId(),
                             new int[]{fila, columna}, new int[]{nuevaFila, nuevaColumna});
                 } else {
+                    System.out.println("Un animal se quedó en su posición, no pudo moverse.");
 
                 }
                 return;
