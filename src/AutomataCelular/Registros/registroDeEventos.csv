@@ -1,12 +1,12 @@
 Tiempo; Animales; Plantas; Nacimientos; Muertes; Evento; Especie; ID; Ciclo; Fila; Columna
 1;5;3;0;0;
 2;5;3;0;0;
-3;5;3;0;0; // Nacimiento; Perro: 8; 3; [0; 0]
+3;5;3;0;0; // Nacimiento; Perro: 8; 3; [2; 1]
 4;7;3;1;0;
-5;7;3;1;0; // Muerte; Planta: 6; 5; [2; 0]
-6;8;2;1;1; // Nacimiento; Perro: 9; 6; [1; 0] // Muerte; Perro: 8; 6; [0; 1] // Muerte; Perro: 3; 6; [0; 1]
-7;10;2;2;3; // Muerte; Perro: 4; 7; [1; 2]
-8;10;2;2;4;
-9;10;2;2;4; // Muerte; Perro: 2; 9; [2; 0] // Muerte; Perro: 9; 9; [2; 1] // Muerte; Perro: 7; 9; [2; 1] // Muerte; Perro: 5; 9; [2; 2]
-10;10;2;2;8;
-11;10;2;2;8;
+5;7;3;1;0; // Muerte; Planta: 7; 5; [1; 0]
+6;8;2;1;1; // Muerte; Perro: 2; 6; [1; 2]
+7;8;2;1;2; // Nacimiento; Perro: 9; 7; [0; 0] // Muerte; Perro: 4; 7; [0; 2]
+8;10;2;2;3;
+9;10;2;2;3; // Muerte; Perro: 3; 9; [1; 0]
+10;10;2;2;4; // Muerte; Perro: 9; 10; [0; 0] // Muerte; Perro: 5; 10; [0; 2]
+11;10;2;2;6; // Muerte; Perro: 6; 11; [1; 2]
