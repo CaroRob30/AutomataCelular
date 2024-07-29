@@ -1,6 +1,11 @@
 package AutomataCelular.SeresVivos;
 
 import AutomataCelular.Configuracion;
+/*
+Esta clase hereda la clase abstracta SerVivo e implementa los métodos pasoDelTiempo(),
+sonDeLaMismaEspecie() y estaVivo() para definir el comportamiento de una planta.
+
+ */
 
 public class Planta extends SerVivo {
 
